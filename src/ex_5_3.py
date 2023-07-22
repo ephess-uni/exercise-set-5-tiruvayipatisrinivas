@@ -19,7 +19,7 @@ if __name__ == "__main__":
     # (see README.md for more details)
         
     parser = ArgumentParser(description='This program applies a standard scale transform to the data in infile and writes it to outfile.')
-    parser.add_argument('infile',help='provide input file path'')
+    parser.add_argument('infile',help='provide input file path')
     parser.add_argument('outfile',help='provide output file path')
     args = parser.parse_args()
     raw_data = np.loadtxt(args.infile)
